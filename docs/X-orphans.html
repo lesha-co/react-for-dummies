@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <style>
+</style>
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+        
+        <style>
+.task-list-item { list-style-type: none; } .task-list-item-checkbox { margin-left: -20px; vertical-align: middle; }
+</style>
+        <style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        
+        
+        
+    </head>
+    <body class="vscode-light">
+        <p>Сверху мы видим несколько строк с импортами. <code>import</code>-синтаксис не свойственен для JS, это инструкции для сборщика, который добавит указанные файлы в результат при сборке приложения. В качестве источника может быть указан пакет NPM (например <code>react</code> или <code>react-dom</code>) или относительный путь до файла без расширения (<code>'./App'</code>)</p>
+<p>Одним из главных атрибутов html-тега является <code>class</code>. В JSX вместо него используется атрибут <code>className</code>. На то есть некоторые исторические и технические причины. <code>сlass</code> работать тоже будет, но это ошибка, и консоль браузера тебе об этом скажет:</p>
+<pre><code>    Warning: Invalid DOM property `class`. Did you mean `className`?
+
+К консоли браузера (и вообще, панели разработчика разработки) мы еще вернемся, так как это крайне полезный инструмент.
+</code></pre>
+<p>Памятка по синтаксису CSS:
+| Селектор | Соответствующий элемент |
+| -------- | ----------------------- |
+| .a       | Элемент с классом &quot;а&quot;   |
+| #a       | Элемент с id &quot;а&quot;        |
+| div.a    | <code>&lt;div class=&quot;a&quot;&gt;</code>       |
+| div.a.b  | <code>&lt;div class=&quot;a b&quot;&gt;</code>     |</p>
+<pre><code>У элементов могут присутствовать другие классы, кроме указанных в селекторе: `div.a` так же подойдет и к `&lt;div class=&quot;a b&quot;&gt;`</code></pre>
+
+    </body>
+    </html>
