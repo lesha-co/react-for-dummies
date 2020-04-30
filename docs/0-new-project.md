@@ -80,7 +80,15 @@
     C:\Users\username\>cd Desktop
     C:\Users\username\Desktop\>_ 
 
-Это должно сработать даже на русскоязычной Windows, где папка называется "Рабочий стол"[^onedrive]
+Это должно сработать даже на русскоязычной Windows, где папка называется "Рабочий стол"
+
+**Примечание для пользователей OneDrive**: Пользователи OneDrive в Windows могут к своему удивлению обнаружить, что папки "Рабочий стол" ("Desktop") нет в домашней папке. Обычно, она находится внутри папки OneDrive:
+
+        C:\Users\username\> cd OneDrive
+        C:\Users\username\OneDrive> cd Desktop
+        C:\Users\username\OneDrive\Desktop>_
+
+
 
 `cd ..` — выполняет переход на папку выше:
 
@@ -228,4 +236,3 @@ To create a production build, use npm run build.
         C:\Users\username\> cd OneDrive
         C:\Users\username\OneDrive> cd Desktop
         C:\Users\username\OneDrive\Desktop>_
-
