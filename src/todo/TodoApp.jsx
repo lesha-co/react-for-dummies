@@ -1,8 +1,10 @@
-import React, { useState } from "react";
-import { Field } from "./field";
-import { Item } from "./item";
+import React, { useState } from 'react';
+import './todo.css';
 
-export function Todo() {
+import { Field } from './field';
+import { Item } from './item';
+
+export function TodoApp() {
   const [items, setItems] = useState([]);
 
   return (
@@ -12,9 +14,7 @@ export function Todo() {
         <Item
           item={item}
           key={i}
-          onDelete={() =>
-            setItems((items) => [...items.slice(0, i), ...items.slice(i + 1)])
-          }
+          onDelete={() => setItems((items) => [...items.slice(0, i), ...items.slice(i + 1)])}
         />
       ))}
     </div>

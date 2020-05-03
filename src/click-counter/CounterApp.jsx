@@ -1,8 +1,6 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
-import "./App.css";
-
-function Counter(props) {
+export function Counter(props) {
   const [counter, setCounter] = useState(0);
   function onClick() {
     setCounter(counter + 1);
@@ -15,7 +13,7 @@ function Counter(props) {
   );
 }
 
-function App() {
+export function CounterApp() {
   return (
     <div className="App">
       <Counter name="Красные машины" />
@@ -25,5 +23,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
